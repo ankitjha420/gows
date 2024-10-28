@@ -1,12 +1,8 @@
-# Welcome to your CDK Go project!
+# JWT Auth Microservice
 
-This is a blank project for CDK development with Go.
+Created a simple jwt auth service that can handle registration, login and jwt token signing.
 
-The `cdk.json` file tells the CDK toolkit how to execute your app.
+Deployed on aws. Data is stored in dynamodb, api gateway is used for routing/proxying and lamdas for receiving events (http request) and running code.
 
-## Useful commands
 
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
- * `go test`         run unit tests
+### aws resources are bundled into a single stack (Infrastructure as Code) which can be managed from gows.go
